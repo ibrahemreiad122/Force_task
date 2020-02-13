@@ -1,0 +1,364 @@
+/* import fonts */
+@font-face {
+  src: url(../fonts/Fancy-Signature.ttf);
+  font-family: Fancy-Signature;
+}
+@font-face {
+  src: url(../fonts/Roboto-Bold.ttf);
+  font-family: Roboto-Bold;
+}
+@font-face {
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-family: Roboto-Regular;
+}
+@font-face {
+  src: url(../fonts/Roboto-Light.ttf);
+  font-family: Roboto-Light;
+}
+@font-face {
+  src: url(../fonts/Roboto-Thin.ttf);
+  font-family: Roboto-Thin;
+}
+
+/* static body style */
+
+body {
+  background-image: url(../photos/Background.png);
+}
+
+.page {
+  background-image: url(../photos/up.png);
+  background-repeat: no-repeat;
+}
+
+/* navbar style start */
+
+.menu {
+  padding-top: 45px;
+}
+.menu button {
+  border: none;
+  background: none;
+  outline: inherit;
+  transition: all 1s ease;
+}
+#toggleIcon {
+  color: white;
+  position: sticky;
+  z-index: 11;
+}
+.allToggle {
+  background-color: black;
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  margin: 0;
+  padding-top: 180px;
+  display: none;
+  padding-left: 20px;
+  animation: fill-animate 0.5s linear;
+}
+@keyframes fill-animate {
+  0% {
+    width: 25%;
+    left: 0;
+    height: 25%;
+  }
+
+  100% {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+.data {
+  list-style-type: none;
+  display: none;
+  padding-left: 0;
+}
+.data li:not(:last-child) {
+  padding-bottom: 30px;
+}
+.data li:hover {
+  text-shadow: -1px 1px 20px #ffffff;
+}
+.data li a {
+  color: white;
+  text-decoration: none;
+  font-family: Roboto-Bold;
+  font-size: 20px;
+  padding-right: 70px;
+}
+.forBorder {
+  border-right: 1px solid #868c92;
+  transition: border-right 1s;
+}
+.dropDown {
+  list-style-type: none;
+  position: absolute;
+  visibility: hidden;
+  z-index: 12;
+  text-decoration: none;
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  padding-left: 70px;
+}
+.dropDown a {
+  color: white;
+  text-decoration: none;
+}
+.dropDown a:hover {
+  text-shadow: -1px 1px 20px #ffffff;
+}
+.dropDown2 {
+  list-style-type: none;
+  position: relative;
+  visibility: hidden;
+  z-index: 13;
+  text-decoration: none;
+  font-family: Roboto-Regular;
+  font-size: 20px;
+  padding-left: 70px;
+}
+.dropDown2 a {
+  color: white;
+  text-decoration: none;
+}
+.dropDown2 a:hover {
+  text-shadow: -1px 1px 20px #ffffff;
+}
+.active a {
+  text-shadow: -1px 1px 20px #ffffff;
+}
+/* navbar style end */
+
+/* content of body start*/
+
+.container i {
+  margin-left: -20px;
+  color: white;
+  display: inline;
+}
+
+.menu i:before {
+  font-size: 30px;
+  padding-left: 100px;
+}
+.bookName {
+  font-family: Roboto-Light;
+  color: #acb3ba;
+  font-size: 80px;
+}
+.authr {
+  font-family: Roboto-Light;
+  color: #acb3ba;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.description {
+  font-family: Roboto-Bold;
+  color: #868c92;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.downloadDemo {
+  font-family: Roboto-Regular;
+  color: #868c92;
+  margin-bottom: 50px;
+}
+.downloadDemo span {
+  font-family: Roboto-Regular;
+  color: #868c92;
+  font-size: 12px;
+}
+.free {
+  font-family: Roboto-Regular;
+  color: #868c92;
+  font-size: 9px;
+  margin-left: -20px;
+}
+.downloadFull {
+  font-family: Roboto-Regular;
+  color: #868c92;
+  margin-bottom: 50px;
+}
+.downloadFull span {
+  font-family: Roboto-Bold;
+  color: #868c92;
+  font-size: 12px;
+  padding-left: 45px;
+}
+.downloadDemo span {
+  font-family: Roboto-Bold;
+  color: #868c92;
+  font-size: 12px;
+  padding-left: 45px;
+}
+
+.downloadFull a {
+  max-height: 30px;
+}
+.downloadDemo a {
+  max-height: 30px;
+}
+.downloadDemo a i:before {
+  font-size: 25px;
+  text-shadow: -1px 1px 20px #ffffff;
+  padding-right: 15px;
+}
+.downloadFull a i:before {
+  font-size: 25px;
+  text-shadow: -1px 1px 20px #ffffff;
+  padding-right: 15px;
+}
+.companyName {
+  font-family: Fancy-Signature;
+  color: #868c92;
+  font-size: 30px;
+}
+.bookImg {
+  height: 510px;
+  width: 330px;
+  margin-left: 50px;
+  box-shadow: -17px 16px 20px 1px rgba(0, 0, 0, 0.65);
+}
+/* content of body end*/
+
+/* social media start */
+
+.socialToggle {
+  height: 30px;
+  overflow: hidden;
+  width: 60px;
+  transition: height 0.6s;
+}
+.socialToggle:hover {
+  height: 120px;
+}
+.links {
+  color: #acb3ba;
+  display: initial;
+  position: absolute;
+  bottom: 70px;
+  padding-left: 10px;
+  float: right;
+}
+
+.links a {
+  color: #acb3ba;
+  text-decoration: none;
+}
+.links a i:hover {
+  text-shadow: -1px 1px 20px #ffffff;
+}
+/* social media end */
+
+/* media for html elment */
+
+@media screen and (max-width: 990px) {
+  .menu i:before {
+    font-size: 30px;
+    padding-left: 0px;
+  }
+
+  .bookName {
+    font-size: 30px;
+  }
+  .bookImg {
+    height: 255px;
+    width: 165px;
+  }
+  .authr {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .description {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .downloadDemo {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .downloadFull {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .downloadFull span {
+    font-size: 9px;
+    padding-left: 20px;
+  }
+  .downloadDemo span {
+    font-size: 9px;
+    padding-left: 20px;
+  }
+  .free {
+    font-size: 7px;
+  }
+  .downloadDemo a i:before {
+    font-size: 15px;
+    padding-right: 7px;
+  }
+  .downloadFull a i:before {
+    font-size: 15px;
+    padding-right: 7px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .bookName {
+    font-size: 80px;
+  }
+  .bookImg {
+    height: 510px;
+    width: 330px;
+    margin-bottom: 25px;
+  }
+  .authr {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .description {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .downloadDemo {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .downloadFull {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .downloadFull span {
+    font-size: 8px;
+    padding-left: 20px;
+  }
+  .downloadDemo span {
+    font-size: 8px;
+    padding-left: 20px;
+  }
+  .free {
+    font-size: 8px;
+  }
+  .downloadDemo a i:before {
+    font-size: 15px;
+    padding-right: 5px;
+  }
+  .downloadFull a i:before {
+    font-size: 15px;
+    padding-right: 5px;
+  }
+  .links {
+    position: absolute;
+    bottom: 0px;
+    margin-left: -10px;
+  }
+  .data li {
+    padding-left: 20px;
+  }
+}
